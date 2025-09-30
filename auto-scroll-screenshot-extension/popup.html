@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Scroll Screenshot</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>📸 Auto Scroll Screenshot</h1>
+    </div>
+    
+    <div class="status-section">
+      <div class="status-indicator" id="statusIndicator">
+        <span class="status-dot"></span>
+        <span id="statusText">Ready</span>
+      </div>
+    </div>
+
+    <div class="settings-section">
+      <div class="setting-group">
+        <label for="folderName">Folder Name:</label>
+        <input type="text" id="folderName" placeholder="screenshots_2024" value="">
+      </div>
+      
+      <div class="setting-group">
+        <label for="scrollStep">Scroll Step (% of viewport):</label>
+        <input type="range" id="scrollStep" min="50" max="100" value="80">
+        <span id="scrollStepValue">80%</span>
+      </div>
+      
+      <div class="setting-group">
+        <label for="delay">Delay between screenshots (ms):</label>
+        <input type="number" id="delay" min="500" max="5000" value="1000" step="100">
+      </div>
+    </div>
+
+    <div class="page-info-section">
+      <h3>Page Information</h3>
+      <div class="info-grid">
+        <div class="info-item">
+          <span class="info-label">Viewport Height:</span>
+          <span id="viewportHeight">-</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Total Height:</span>
+          <span id="totalHeight">-</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Estimated Screenshots:</span>
+          <span id="estimatedScreenshots">-</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="controls-section">
+      <button id="startBtn" class="btn btn-primary">Start Screenshot</button>
+      <button id="stopBtn" class="btn btn-secondary" disabled>Stop Screenshot</button>
+      <button id="refreshBtn" class="btn btn-outline">Refresh Page Info</button>
+    </div>
+
+    <div class="progress-section" id="progressSection" style="display: none;">
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+      <div class="progress-text">
+        <span id="progressText">0 / 0 screenshots</span>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Click "Start Screenshot" to begin capturing screenshots of the current page.</p>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

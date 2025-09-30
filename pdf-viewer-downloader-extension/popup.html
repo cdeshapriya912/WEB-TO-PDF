@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Viewer Downloader</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="icon">📄</div>
+            <h1>PDF Downloader</h1>
+        </div>
+        
+        <div class="content">
+            <div id="status" class="status">
+                <div class="spinner"></div>
+                <span>Checking for PDF viewer...</span>
+            </div>
+            
+            <div id="pageInfo" class="page-info" style="display: none;">
+                <div class="page-count">
+                    <span class="label">Pages detected:</span>
+                    <span id="pageCount" class="count">0</span>
+                </div>
+            </div>
+            
+            <div class="controls" id="controls" style="display: none;">
+                <div class="filename-section">
+                    <label for="filename">Filename:</label>
+                    <input type="text" id="filename" value="pdf-viewer-download.pdf" placeholder="Enter filename">
+                </div>
+                
+                <button id="downloadBtn" class="download-btn">
+                    <span class="btn-icon">⬇️</span>
+                    <span class="btn-text">Download PDF</span>
+                </button>
+            </div>
+            
+            <div id="error" class="error" style="display: none;">
+                <div class="error-icon">⚠️</div>
+                <div class="error-message"></div>
+            </div>
+            
+            <div id="success" class="success" style="display: none;">
+                <div class="success-icon">✅</div>
+                <div class="success-message"></div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div class="help-text">
+                <small>Click the extension icon on PDF viewer pages to download</small>
+            </div>
+        </div>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Page for Auto Scroll Screenshot Extension</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 200vh; /* Make page scrollable */
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .section {
+            margin: 40px 0;
+            padding: 20px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            background: #f9f9f9;
+        }
+        
+        .section h2 {
+            color: #4facfe;
+            margin-top: 0;
+        }
+        
+        .color-block {
+            height: 200px;
+            margin: 20px 0;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .red { background: linear-gradient(45deg, #ff6b6b, #ee5a24); }
+        .blue { background: linear-gradient(45deg, #4facfe, #00f2fe); }
+        .green { background: linear-gradient(45deg, #56ab2f, #a8e6cf); }
+        .purple { background: linear-gradient(45deg, #a8c0ff, #3f2b96); }
+        .orange { background: linear-gradient(45deg, #ff9a9e, #fecfef); }
+        .teal { background: linear-gradient(45deg, #a8edea, #fed6e3); }
+        
+        .instructions {
+            background: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .instructions h3 {
+            margin-top: 0;
+            color: #1976d2;
+        }
+        
+        .instructions ol {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        
+        .instructions li {
+            margin: 8px 0;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            background: #333;
+            color: white;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧪 Test Page for Auto Scroll Screenshot Extension</h1>
+        
+        <div class="instructions">
+            <h3>How to Test the Extension:</h3>
+            <ol>
+                <li>Make sure the Auto Scroll Screenshot extension is installed and enabled</li>
+                <li>Click the extension icon in your Chrome toolbar</li>
+                <li>Configure your settings (folder name, scroll step, delay)</li>
+                <li>Click "Start Screenshot" to begin capturing</li>
+                <li>Watch as the page auto-scrolls and screenshots are taken</li>
+                <li>Check your Downloads folder for the screenshot folder</li>
+            </ol>
+        </div>
+        
+        <div class="section">
+            <h2>Section 1: Introduction</h2>
+            <p>This is a test page designed to help you test the Auto Scroll Screenshot Chrome extension. The page contains multiple sections with different content and colors to make it easy to see how the extension captures different parts of the page.</p>
+            
+            <div class="color-block red">
+                Red Section - Should be captured in first screenshot
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Section 2: Features</h2>
+            <p>The extension automatically scrolls through web pages and captures screenshots of each viewport section. This allows you to create a complete visual record of long web pages.</p>
+            
+            <div class="color-block blue">
+                Blue Section - Second screenshot area
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Section 3: Configuration</h2>
+            <p>You can customize various settings including the scroll step size, delay between screenshots, and the folder name where screenshots will be saved.</p>
+            
+            <div class="color-block green">
+                Green Section - Third screenshot area
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Section 4: Usage Tips</h2>
+            <p>For best results, ensure the page is fully loaded before starting the screenshot process. You can also adjust the scroll step to capture more or fewer screenshots depending on your needs.</p>
+            
+            <div class="color-block purple">
+                Purple Section - Fourth screenshot area
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Section 5: File Organization</h2>
+            <p>Screenshots are automatically organized in folders with timestamps, making it easy to manage multiple screenshot sessions. Each screenshot is numbered sequentially for easy identification.</p>
+            
+            <div class="color-block orange">
+                Orange Section - Fifth screenshot area
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Section 6: Technical Details</h2>
+            <p>The extension uses Chrome's built-in screenshot API to capture the visible area of the page. It automatically detects the viewport size and calculates the optimal scroll steps.</p>
+            
+            <div class="color-block teal">
+                Teal Section - Sixth screenshot area
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Section 7: Final Notes</h2>
+            <p>This test page is designed to be long enough to require multiple screenshots. The colorful sections make it easy to verify that each part of the page was captured correctly.</p>
+            
+            <p>If you can see this text, the extension should capture this final section in its last screenshot. The page should have scrolled through all the previous sections automatically.</p>
+        </div>
+        
+        <div class="footer">
+            <h3>Test Complete!</h3>
+            <p>If you've reached this section, the auto-scroll functionality is working correctly. Check your Downloads folder for the screenshot folder containing all captured images.</p>
+        </div>
+    </div>
+</body>
+</html>
